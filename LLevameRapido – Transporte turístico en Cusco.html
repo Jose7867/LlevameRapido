@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LLevameRapido | Transporte Turístico Privado en Cusco</title>
+<meta name="description" content="Transporte turístico privado y personalizado en Cusco: Machu Picchu, Valle Sagrado, Laguna Humantay y Montaña de 7 Colores. Viaja cómodo, seguro y a tu ritmo.">
+<meta property="og:title" content="LLevameRapido – Tours y Transporte Privado en Cusco">
+<meta property="og:description" content="Descubre Cusco con total libertad, confort y seguridad. Sin prisas ni grupos masivos.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F8FAFB;
+  --surface: #FFFFFF;
+  --surface-alt: #F1F5F7;
+  --ink: #0A2227;
+  --ink-light: #16363D;
+  --muted: #566D71;
+  --line: #E1E8EB;
+  --line-strong: #CBD7DA;
+  --accent: #E11D48;
+  --accent-hover: #BE123C;
+  --accent-ink: #FFFFFF;
+  --gold: #F59E0B;
+  --gold-dark: #D97706;
+  --gold-bg: #FEF3C7;
+  --teal: #0D7A87;
+  --teal-hover: #0A636E;
+  --teal-soft: #E6F4F6;
+  --deep: #071F24;
+  --deep-card: #0F3238;
+  --wa: #16A34A;
+  --wa-hover: #15803D;
+  --radius: 18px;
+  --radius-sm: 10px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 2px 8px rgba(7, 31, 36, 0.04);
+  --shadow-md: 0 10px 25px -4px rgba(7, 31, 36, 0.08), 0 4px 10px -2px rgba(7, 31, 36, 0.04);
+  --shadow-lg: 0 22px 38px -8px rgba(7, 31, 36, 0.14), 0 8px 16px -4px rgba(7, 31, 36, 0.06);
+  --trans: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #07171A;
+    --surface: #0E2428;
+    --surface-alt: #132E33;
+    --ink: #EEF5F6;
+    --ink-light: #D2E2E4;
+    --muted: #8EA4A7;
+    --line: #1D3B40;
+    --line-strong: #2A4E54;
+    --accent: #FB7185;
+    --accent-hover: #F43F5E;
+    --teal: #38BDF8;
+    --teal-soft: rgba(56, 189, 248, 0.12);
+    --gold-bg: rgba(245, 158, 11, 0.15);
+    --deep-card: #15363D;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(76px + env(safe-area-inset-top, 0px)); }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 16px/1.65 "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  line-height: 1.15;
+  margin: 0 0 .5em;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+}
+
+h1 { font-size: clamp(2.4rem, 5.5vw, 4.4rem); font-weight: 800; }
+h2 { font-size: clamp(1.9rem, 3.8vw, 2.9rem); font-weight: 700; }
+h3 { font-size: 1.35rem; font-weight: 700; }
+p { margin: 0 0 1em; }
+
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+section { padding: 92px 0; }
+.sub { color: var(--muted); max-width: 62ch; font-size: 1.08rem; line-height: 1.6; }
+.sec-head { margin-bottom: 40px; }
+.sec-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--teal-soft);
+  color: var(--teal);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  margin-bottom: 12px;
+}
+
+/* ===== BOTONES ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: var(--radius-full);
+  padding: 13px 26px;
+  font: 600 0.98rem "Plus Jakarta Sans", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--accent);
+  color: var(--accent-ink);
+  transition: var(--trans);
+  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.28);
+}
+.btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(225, 29, 72, 0.38);
+}
+.btn.teal {
+  background: var(--teal);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(13, 122, 135, 0.3);
+}
+.btn.teal:hover {
+  background: var(--teal-hover);
+  box-shadow: 0 8px 20px rgba(13, 122, 135, 0.4);
+}
+.btn.ghost {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  box-shadow: none;
+  backdrop-filter: blur(8px);
+}
+.btn.ghost:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+.btn.wa {
+  background: var(--wa);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(22, 163, 74, 0.35);
+}
+.btn.wa:hover {
+  background: var(--wa-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.45);
+}
+.btn-tour {
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 0.95rem;
+  background: var(--teal);
+  color: #fff;
+  box-shadow: 0 3px 12px rgba(13, 122, 135, 0.2);
+}
+.btn-tour:hover {
+  background: var(--teal-hover);
+  box-shadow: 0 6px 18px rgba(13, 122, 135, 0.35);
+}
+.btn-tour svg { transition: transform 0.2s ease; }
+.btn-tour:hover svg { transform: translateX(4px); }
+
+/* ===== NAVEGACIÓN ===== */
+header.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(7, 31, 36, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: env(safe-area-inset-top, 0px);
+}
+header.nav .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+.logo {
+  font: 800 1.45rem "Bricolage Grotesque", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.02em;
+}
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--gold), var(--accent));
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.logo b {
+  color: var(--gold);
+}
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+nav a {
+  color: #E2EBEB;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.94rem;
+  transition: color 0.2s;
+  padding: 6px 2px;
+  position: relative;
+}
+nav a:hover { color: #fff; }
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.2s ease;
+}
+nav a:hover::after { width: 100%; }
+#burger {
+  display: none;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+}
+#burger svg { display: block; width: 28px; height: 28px; }
+
+@media(max-width: 940px) {
+  #burger { display: block; }
+  nav ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: var(--deep);
+    flex-direction: column;
+    padding: 24px;
+    gap: 18px;
+    align-items: stretch;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+  nav ul.open { display: flex; }
+  nav a { font-size: 1.05rem; }
+  nav .btn { text-align: center; }
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  color: #fff;
+  background: var(--deep);
+  overflow: hidden;
+  padding: 110px 0 150px;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+.hero video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.9);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 31, 36, 0.85) 0%, rgba(7, 31, 36, 0.48) 45%, rgba(7, 31, 36, 0.94) 100%);
+  z-index: 1;
+}
+.hero svg.mt {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 120px;
+  z-index: 2;
+  color: var(--bg);
+  fill: currentColor;
+}
+.hero .wrap {
+  position: relative;
+  z-index: 3;
+}
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 18px;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #FEEBC8;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.hero-pill span.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: inline-block;
+  box-shadow: 0 0 10px var(--gold);
+}
+.hero h1 {
+  color: #FFFFFF;
+  text-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+  max-width: 17ch;
+}
+.hero p {
+  max-width: 58ch;
+  font-size: 1.2rem;
+  color: #E2ECEE;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.hero .btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Barra de confianza en Hero */
+.hero-trust-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 50px;
+  padding: 18px 24px;
+  background: rgba(14, 45, 51, 0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius);
+  max-width: 980px;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.trust-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(245, 158, 11, 0.18);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.trust-text b { display: block; font-size: 0.92rem; color: #fff; line-height: 1.2; }
+.trust-text span { font-size: 0.78rem; color: #A5BABB; }
+
+/* ===== GRILLAS Y TARJETAS ===== */
+.grid { display: grid; gap: 28px; }
+.g3 { grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); }
+.g2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.g4 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+
+/* TARJETA BASE: Estructura Flexbox para alineación absoluta */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: var(--shadow-sm);
+  transition: var(--trans);
+  position: relative;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(13, 122, 135, 0.3);
+}
+
+/* PAD: Contenedor flex que ocupa todo el espacio disponible */
+.pad {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+/* FOTOS DE TOURS Y CABECERA */
+.ph {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 220px;
+  padding: 16px;
+  color: #fff;
+  font-size: 0.85rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--c1, var(--teal)), var(--c2, var(--deep)));
+}
+.ph img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card:hover .ph img {
+  transform: scale(1.08);
+}
+.ph::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 40%, rgba(7,31,36,0.85) 100%);
+  pointer-events: none;
+}
+.ph-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  background: rgba(7, 31, 36, 0.8);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.ph-rating {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.92);
+  color: #0A2227;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.ph-rating svg { color: var(--gold); fill: currentColor; }
+.ph-title {
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+/* ETIQUETAS */
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 12px 0 16px;
+}
+.tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-full);
+  padding: 4px 11px;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* DESCRIPCIÓN DEL TOUR */
+.tour-desc {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+/* PIE DE TARJETA CON ALINEACIÓN PERFECTA (margin-top: auto) */
+.card-footer {
+  margin-top: auto; /* EMPUJA EL FOOTER HASTA EL FINAL EXACTO */
+  padding-top: 16px;
+  border-top: 1px dashed var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.price-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.price-val {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--accent);
+}
+.price-val small {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* FILTROS DE TOURS */
+.filter-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.filter-btn {
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  color: var(--ink);
+  font: 600 0.88rem "Plus Jakarta Sans", sans-serif;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: var(--trans);
+}
+.filter-btn:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  background: var(--teal-soft);
+}
+.filter-btn.active {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(13, 122, 135, 0.25);
+}
+
+/* SECCIÓN BENEFICIOS / NOSOTROS */
+.benefit-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: var(--trans);
+}
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--teal);
+}
+.benefit-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--teal-soft);
+  color: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.benefit-icon svg { width: 26px; height: 26px; }
+
+/* BANDA DESTACADA (BAND) */
+.band {
+  background: var(--deep);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.band::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(13, 122, 135, 0.25) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.band h2 { color: #fff; }
+.band .sub { color: #A5BABB; }
+.band .card {
+  background: var(--deep-card);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.band .card:hover {
+  border-color: var(--teal);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
+}
+.band .card h3 { color: #fff; }
+.band .card p { color: #B6CACC; }
+
+/* LISTAS CHECK */
+ul.chk { list-style: none; padding: 0; margin: 0; }
+ul.chk li {
+  padding: 6px 0 6px 32px;
+  position: relative;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+.band ul.chk li { color: #D2E2E4; }
+ul.chk li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 22px;
+  height: 22px;
+  background: var(--teal-soft);
+  color: var(--teal);
+  font-weight: 800;
+  font-size: 0.85rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul.chk.no li::before {
+  content: "✕";
+  background: rgba(225, 29, 72, 0.12);
+  color: var(--accent);
+}
+
+/* VEHÍCULOS Y CONDUCTORES */
+.veh-card, .drv-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.veh-head {
+  background: linear-gradient(135deg, var(--deep), var(--teal));
+  color: #fff;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.veh-badge {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* OPINIONES / TESTIMONIOS */
+.tst-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: var(--shadow-sm);
+  transition: var(--trans);
+}
+.tst-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.tst-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.tst-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal), var(--accent));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.tst-meta b { display: block; font-size: 0.94rem; color: var(--ink); }
+.tst-meta span { font-size: 0.8rem; color: var(--muted); }
+.stars { color: var(--gold); display: flex; gap: 3px; margin-bottom: 12px; }
+
+/* FORMULARIO DE RESERVA */
+.form-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 34px;
+  box-shadow: var(--shadow-md);
+}
+form label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+  color: var(--ink);
+}
+input, select, textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px var(--teal-soft);
+  background: #fff;
+}
+.row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0 18px; }
+#summary {
+  background: var(--teal-soft);
+  border: 1.5px dashed var(--teal);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  margin: 12px 0 20px;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+
+/* MODAL DE DETALLES DEL TOUR */
+dialog {
+  border: 0;
+  border-radius: 22px;
+  max-width: 900px;
+  width: calc(100% - 32px);
+  max-height: 90vh;
+  padding: 0;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-lg);
+}
+dialog::backdrop {
+  background: rgba(7, 31, 36, 0.75);
+  backdrop-filter: blur(6px);
+}
+.dh {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 16px;
+  background: var(--surface);
+  z-index: 10;
+  border-bottom: 1px solid var(--line);
+}
+.dh button {
+  border: 0;
+  background: var(--surface-alt);
+  color: var(--ink);
+  border-radius: var(--radius-full);
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: var(--trans);
+}
+.dh button:hover { background: var(--line); }
+.dbody { padding: 24px 32px 36px; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 16px 0 26px;
+}
+.gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  transition: var(--trans);
+}
+.gallery img:hover { transform: scale(1.03); }
+
+/* ITINERARIO TIMELINE */
+.tl {
+  list-style: none;
+  margin: 16px 0 24px;
+  padding: 0 0 0 24px;
+  border-left: 3px solid var(--teal);
+}
+.tl.back { border-left-color: var(--accent); border-left-style: dashed; }
+.tl li { position: relative; padding: 0 0 18px 12px; }
+.tl li::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--teal);
+  border: 3px solid var(--surface);
+  box-shadow: 0 0 0 2px var(--teal);
+}
+.tl.back li::before { background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+.tl b { font-size: 1.02rem; color: var(--ink); }
+.tl small { color: var(--muted); display: block; margin-top: 3px; }
+
+/* TABLA DE TARIFAS */
+table { border-collapse: collapse; width: 100%; margin: 14px 0 24px; }
+td, th { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); font-size: 0.94rem; }
+th { background: var(--surface-alt); font-weight: 700; color: var(--ink); }
+td:last-child, th:last-child { text-align: right; }
+
+/* MAPA ESQUEMÁTICO */
+svg.map {
+  width: 100%;
+  height: auto;
+  background: var(--surface-alt);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  margin: 14px 0;
+}
+
+/* FOOTER */
+footer {
+  background: var(--deep);
+  color: #A5BABB;
+  padding: 70px 0 35px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+footer h3 { color: #fff; margin-bottom: 6px; }
+footer a { color: #E2ECEE; text-decoration: none; transition: color 0.2s; }
+footer a:hover { color: var(--gold); }
+footer ul { list-style: none; padding: 0; display: flex; gap: 8px 22px; flex-wrap: wrap; margin: 20px 0; }
+
+/* BOTÓN FLOTANTE WHATSAPP CON ANIMACIÓN */
+.wafloat {
+  position: fixed;
+  right: 22px;
+  bottom: calc(22px + env(safe-area-inset-bottom, 0px));
+  z-index: 99;
+  box-shadow: 0 8px 26px rgba(22, 163, 74, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: var(--wa);
+  color: #fff;
+  text-decoration: none;
+  transition: var(--trans);
+  animation: pulseWa 3s infinite ease-in-out;
+}
+.wafloat:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(22, 163, 74, 0.55);
+}
+@keyframes pulseWa {
+  0%, 100% { box-shadow: 0 8px 24px rgba(22, 163, 74, 0.4); }
+  50% { box-shadow: 0 8px 32px rgba(22, 163, 74, 0.7); }
+}
+
+@media(prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero video { display: none; }
+  .wafloat { animation: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVEGACIÓN -->
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#inicio">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      </div>
+      <span>LLevame<b>Rapido</b></span>
+    </a>
+    <button id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav>
+      <ul id="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#nosotros">Por qué elegirnos</a></li>
+        <li><a href="#vehiculos">Vehículos</a></li>
+        <li><a href="#conductores">Conductores</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a class="btn wa" href="#reservar">Reservar ahora</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO PRINCIPAL -->
+  <section class="hero" id="inicio">
+    <video autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+      <source src="images/videocusco.mp4" type="video/mp4">
+    </video>
+    <svg class="mt" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 300V170l120-60 90 50 140-110 130 120 110-70 150 100 120-80 140 90 100-40 100 60v120z" opacity=".4"/>
+      <path d="M0 300V230l160-70 120 60 160-90 140 100 150-80 130 70 160-60 180 80v120z"/>
+    </svg>
+    <div class="wrap">
+      <div class="hero-pill">
+        <span class="dot"></span>
+        <span>Transporte Turístico Privado en Cusco</span>
+      </div>
+      <h1>Viaja por Cusco a tu propio ritmo</h1>
+      <p>Nos encargamos del camino para que tú disfrutes cada paisaje con máxima comodidad, total puntualidad y la libertad de detenerte cuando quieras.</p>
+      <div class="btns">
+        <a class="btn" href="#tours">
+          <span>Explorar tours privados</span>
+          <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </a>
+        <a class="btn ghost" data-wa href="#">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+          <span>Cotizar por WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Barra de confianza rápida -->
+      <div class="hero-trust-bar">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/></svg>
+          </div>
+          <div class="trust-text">
+            <b>100% Privado</b>
+            <span>Solo viaja tu grupo</span>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="trust-text">
+            <b>Sin prisas</b>
+            <span>Paradas libres para fotos</span>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="trust-text">
+            <b>Recojo en hotel</b>
+            <span>Puerta a puerta en Cusco</span>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="trust-text">
+            <b>Calificación 4.9/5</b>
+            <span>Viajeros satisfechos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN TOURS Y PAQUETES -->
+  <section id="tours">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-badge">Destinos Inolvidables</span>
+        <h2>Paquetes y Rutas en Cusco</h2>
+        <p class="sub">Vehículo exclusivo para ti y tus acompañantes. Todos los precios de servicio privado son por grupo (no por persona), con recojo y retorno a tu hotel.</p>
+        
+        <!-- Pestañas de filtrado rápido -->
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-btn active" data-filter="all">Todos los destinos</button>
+          <button class="filter-btn" data-filter="clasico">Machu Picchu & Ciudad</button>
+          <button class="filter-btn" data-filter="valle">Valle Sagrado & Salineras</button>
+          <button class="filter-btn" data-filter="montana">Montañas & Lagunas</button>
+        </div>
+      </div>
+
+      <!-- Grilla de Tours con alineación perfecta -->
+      <div class="grid g3" id="tourGrid"></div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ ELEGIRNOS -->
+  <section id="nosotros" style="background:var(--surface)">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-badge">Nuestra Garantía</span>
+        <h2>¿Por qué viajar con LLevameRapido?</h2>
+        <p class="sub">Olvídate de buses atestados, itinerarios rígidos y tiempos perdidos. Te ofrecemos una forma humana y relajada de conocer los tesoros del Perú.</p>
+      </div>
+
+      <div class="grid g3">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+          </div>
+          <h3>Vehículos Modernos y Cómodos</h3>
+          <p>Unidades impecables con aire acondicionado, asientos ergonómicos y amplio maletero, preparadas para caminos andinos.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>Seguridad Certificada</h3>
+          <p>Conductores profesionales con récord intachable, mantenimiento preventivo constante y SOAT turístico vigente.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Privacidad Absoluta</h3>
+          <p>Viajas únicamente con tu pareja, familia o amigos. Sin compartir espacio con desconocidos ni esperas innecesarias.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Puntualidad Rigurosa</h3>
+          <p>Te recogemos a la hora acordada en la puerta de tu hotel para que aproveches cada minuto de tu visita.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <h3>Paradas Fotográficas Libres</h3>
+          <p>¿Ves un mirador increíble? Le pides al chofer que se detenga y disfrutas del momento sin prisas ni presión.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <h3>Asistencia Personalizada 24/7</h3>
+          <p>Respondemos de inmediato por WhatsApp antes, durante y después de tu viaje para resolver cualquier inquietud.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANDA INFORMATIVA (EXPERIENCIA PRIVADA) -->
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-badge" style="background:rgba(255,255,255,0.1);color:#FEEBC8">Libertad Total</span>
+        <h2>La diferencia de viajar en servicio privado</h2>
+        <p class="sub">Un grupo privado transforma por completo la forma en que vives la magia de los Andes peruanos.</p>
+      </div>
+
+      <div class="grid g4">
+        <div class="card pad">
+          <h3>Espacio y Confort</h3>
+          <p>Estira las piernas y viaja con holgura junto a tu equipaje sin apretujones.</p>
+        </div>
+        <div class="card pad">
+          <h3>Horarios a tu Medida</h3>
+          <p>Tú decides cuándo salir y cuánto tiempo quedarte en cada ruina o mirador.</p>
+        </div>
+        <div class="card pad">
+          <h3>Consejos de Locales</h3>
+          <p>Nuestros conductores te recomiendan los mejores restaurantes y horas con menos turistas.</p>
+        </div>
+        <div class="card pad">
+          <h3>Paz y Tranquilidad</h3>
+          <p>Disfruta del paisaje con la música que prefieras y en un ambiente seguro y familiar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOTA DE VEHÍCULOS -->
+  <section id="vehiculos">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-badge">Nuestra Flota</span>
+        <h2>Vehículos para cada tipo de viaje</h2>
+        <p class="sub">Unidades modernas, inspeccionadas y desinfectadas diariamente para tu total tranquilidad.</p>
+      </div>
+      <div class="grid g3" id="vehGrid"></div>
+    </div>
+  </section>
+
+  <!-- CONDUCTORES PROFESIONALES -->
+  <section id="conductores" style="background:var(--surface)">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-badge">Conductores Locales</span>
+        <h2>En las mejores manos al volante</h2>
+        <p class="sub">Conductores cusqueños profesionales con años de experiencia en las carreteras de montaña y trato cordial.</p>
+      </div>
+      <div class="grid g3" id="drvGrid"></div>
+    </div>
+  </section>
+
+  <!-- OPINIONES DE VIAJEROS -->
+  <section id="opiniones">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-badge">Testimonios Reales</span>
+        <h2>Lo que opinan nuestros pasajeros</h2>
+        <p class="sub">Cientos de viajeros de todo el mundo confían en nosotros para sus traslados en Cusco.</p>
+      </div>
+
+      <div class="grid g3" id="tstGrid"></div>
+
+      <!-- Formulario para dejar opinión -->
+      <div class="form-card" style="margin-top:40px;max-width:680px">
+        <h3>¿Ya viajaste con nosotros? Cuéntanos tu experiencia</h3>
+        <p style="color:var(--muted);font-size:0.92rem">Tu opinión ayuda a otros turistas a planear su aventura.</p>
+        <form id="tstForm">
+          <div class="row">
+            <label>Nombre y país / ciudad
+              <input name="n" autocomplete="name" placeholder="Ej. Camila M. (Argentina)" minlength="2" maxlength="80" required>
+            </label>
+            <label>Calificación
+              <select name="r" required>
+                <option value="5">⭐⭐⭐⭐⭐ (Excelente)</option>
+                <option value="4">⭐⭐⭐⭐ (Muy bueno)</option>
+                <option value="3">⭐⭐⭐ (Bueno)</option>
+                <option value="2">⭐⭐ (Regular)</option>
+                <option value="1">⭐ (Malo)</option>
+              </select>
+            </label>
+          </div>
+          <label>Tu comentario
+            <textarea name="c" rows="3" placeholder="¿Cómo fue la atención, el vehículo y la puntualidad?" minlength="10" maxlength="1000" required></textarea>
+          </label>
+          <button class="btn teal" type="submit">Enviar mi reseña</button>
+          <p id="tstMsg" role="status" style="margin-top:12px;color:var(--muted);font-size:0.88rem" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE RESERVA / COTIZACIÓN -->
+  <section id="reservar" style="background:var(--surface)">
+    <div class="wrap" style="max-width:840px">
+      <div class="sec-head" style="text-align:center">
+        <span class="sec-badge">Reserva Fácil y Rápida</span>
+        <h2>Reserva tu Tour Privado</h2>
+        <p class="sub" style="margin:0 auto">Completa los datos de tu viaje y te confirmamos de inmediato la disponibilidad vía WhatsApp sin compromiso.</p>
+      </div>
+
+      <form id="resForm" class="form-card">
+        <div class="row">
+          <label>Tour o Ruta Deseada
+            <select name="tour" id="fTour" required></select>
+          </label>
+          <label>Fecha de tu viaje
+            <input type="date" name="fecha" required>
+          </label>
+          <label>Número de personas
+            <input type="number" name="pax" min="1" max="8" value="2" required>
+          </label>
+          <label>Hora deseada de recojo
+            <input type="time" name="hora" value="08:00" required>
+          </label>
+          <label>Lugar de recojo
+            <input name="recojo" autocomplete="street-address" minlength="3" maxlength="160" placeholder="Hotel o Airbnb en Cusco" required>
+          </label>
+          <label>Lugar de retorno
+            <input name="retorno" maxlength="160" placeholder="Mismo lugar o diferente">
+          </label>
+          <label>Tu Nombre
+            <input name="nombre" autocomplete="name" minlength="2" maxlength="100" placeholder="Nombre y apellido" required>
+          </label>
+          <label>Teléfono / WhatsApp (con código de país)
+            <input name="tel" type="tel" autocomplete="tel" inputmode="tel" minlength="7" maxlength="20" placeholder="+51 984 000 000" required>
+          </label>
+        </div>
+        <label>Correo electrónico (opcional)
+          <input name="mail" type="email" autocomplete="email" maxlength="254" placeholder="tucorreo@ejemplo.com">
+        </label>
+        <label>Comentarios adicionales o pedidos especiales
+          <textarea name="com" rows="2" maxlength="1000" placeholder="¿Llevas equipaje grande? ¿Requieres silla para niños? ¿Paradas especiales?"></textarea>
+        </label>
+        
+        <!-- Resumen dinámico -->
+        <div id="summary" aria-live="polite"></div>
+
+        <button class="btn wa" type="submit" style="width:100%;font-size:1.05rem;padding:15px">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+          <span>Solicitar Reserva por WhatsApp</span>
+        </button>
+        <p id="resMsg" role="status" style="margin-top:12px;text-align:center;color:var(--muted);font-size:0.88rem" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-badge" style="background:rgba(255,255,255,0.1);color:#FEEBC8">Estamos Para Ayudarte</span>
+        <h2>Contáctanos en Cualquier Momento</h2>
+        <p class="sub">¿Tienes una ruta personalizada o una consulta especial? Escríbenos directamente y diseñamos tu itinerario a medida.</p>
+      </div>
+
+      <div class="grid g2" style="align-items:start">
+        <div>
+          <p style="font-size:1.15rem;margin-bottom:24px">Atención cálida, rápida y en tu idioma.</p>
+          <p>💬 <b>WhatsApp Directo:</b> +51 984 123 456</p>
+          <p>📞 <b>Teléfono:</b> (084) 234 567</p>
+          <p>✉️ <b>Correo:</b> contacto@llevamerapido.com</p>
+          <p>📍 <b>Ubicación:</b> Centro Histórico, Cusco, Perú</p>
+          <p>⏱️ <b>Horario de atención:</b> Lunes a Domingo de 06:00 a 22:00</p>
+          
+          <div style="margin-top:28px">
+            <a class="btn wa" data-wa href="#">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+              <span>Escríbenos por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="form-card" id="ctForm">
+          <label>Tu Nombre
+            <input name="nombre" autocomplete="name" minlength="2" maxlength="100" placeholder="Nombre completo" required>
+          </label>
+          <label>Correo Electrónico
+            <input name="correo" type="email" autocomplete="email" maxlength="254" placeholder="tucorreo@ejemplo.com" required>
+          </label>
+          <label>Teléfono / WhatsApp
+            <input name="telefono" type="tel" autocomplete="tel" inputmode="tel" minlength="7" maxlength="20" placeholder="+51 984 ...">
+          </label>
+          <label>Mensaje o Consulta
+            <textarea name="mensaje" rows="3" minlength="10" maxlength="2000" placeholder="¿En qué fechas visitas Cusco y qué lugares te gustaría conocer?" required></textarea>
+          </label>
+          <button class="btn" type="submit" style="width:100%">Enviar Mensaje</button>
+          <p id="ctMsg" role="status" style="margin-top:12px;color:var(--muted);font-size:0.88rem" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px">
+      <div>
+        <a class="logo" href="#inicio">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <span>LLevame<b>Rapido</b></span>
+        </a>
+        <p style="margin-top:8px;font-size:0.92rem">Transporte turístico privado y personalizado en Cusco, Perú.</p>
+      </div>
+      <div>
+        <a class="btn wa" data-wa href="#">Contactar por WhatsApp</a>
+      </div>
+    </div>
+
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#tours">Tours</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#vehiculos">Vehículos</a></li>
+      <li><a href="#conductores">Conductores</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#reservar">Reservar</a></li>
+    </ul>
+
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:0.86rem">
+      <p style="margin:0">© 2026 LLevameRapido. Todos los derechos reservados. Cusco, Perú.</p>
+      <p style="margin:0"><a href="#">Política de Privacidad</a> · <a href="#">Términos del Servicio</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<a class="wafloat" data-wa href="#" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+  <span>¿Dudas? Escríbenos</span>
+</a>
+
+<!-- MODAL DE DETALLE DEL TOUR -->
+<dialog id="dlg" aria-label="Detalle del tour">
+  <div class="dh">
+    <button id="dclose" aria-label="Cerrar modal">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m18 6-12 12M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="dbody" id="dbody"></div>
+</dialog>
+
+<script>
+/* ===== CONFIGURACIÓN Y DATOS TURÍSTICOS ===== */
+const CONFIG = {
+  whatsapp: "51984123456" // Reemplazable con el número oficial de la empresa
+};
+
+const incl = [
+  "Transporte turístico privado y climatizado",
+  "Conductor profesional local experimentado",
+  "Recojo desde la puerta de tu hotel o Airbnb",
+  "Retorno a tu hotel o punto de preferencia",
+  "Combustible y peajes incluidos",
+  "Flexibilidad total para paradas fotográficas",
+  "Atención y asistencia personalizada por WhatsApp"
+];
+
+const noIncl = [
+  "Boleto turístico ni entradas a atractivos arqueológicos",
+  "Alimentación y bebidas (salvo tours específicos)",
+  "Guía oficial de turismo (disponible a solicitud)",
+  "Gastos personales o propinas voluntarias"
+];
+
+const tiers = [
+  ["1 a 2 personas (Auto / SUV confort)", "Tarifa base"],
+  ["3 a 4 personas (Minivan familiar)", "+20% s/ base"],
+  ["5 a 8 personas (Minivan grupal)", "+40% s/ base"]
+];
+
+const S = (n, d, h, t) => ({ n, d, h, t });
+
+const TOURS = [
+  {
+    id: 1,
+    slug: "machu-picchu",
+    categoria: "clasico",
+    nombre: "Machu Picchu (Traslado Ollantaytambo / Hidroeléctrica)",
+    desc: "Transporte directo y puntual hasta la estación de tren en Ollantaytambo o la ruta alternativa por Hidroeléctrica para tu visita a la Maravilla del Mundo.",
+    dur: "2 a 2.5 horas por tramo",
+    min: 1,
+    max: 6,
+    mod: "Privado",
+    precio: 160,
+    rating: 4.9,
+    reviews: 142,
+    c: ["#0D7A87", "#071F24"],
+    imagenes: ["images/imagen1.jpg", "images/imagen2.jpg", "images/OLLANTAYTAMBO1.jpg"],
+    ida: [
+      S("Recojo en tu hotel en Cusco", "Salida a la hora acordada según tu tren", "A convenir", "—"),
+      S("Mirador del Valle Sagrado", "Breve parada panorámica para fotografías", "En ruta", "15 min"),
+      S("Estación de Tren Ollantaytambo", "Llegada con tiempo para abordar hacia Aguas Calientes", "En ruta", "Fin de tramo ida")
+    ],
+    ret: [
+      S("Estación de Ollantaytambo", "Tu chofer te espera con cartel de bienvenida a la salida del tren", "Según tren", "—"),
+      S("Llegada a tu hotel en Cusco", "Retorno seguro hasta la puerta de tu alojamiento", "+2 horas", "—")
+    ]
+  },
+  {
+    id: 2,
+    slug: "valle-sagrado",
+    categoria: "valle",
+    nombre: "Valle Sagrado de los Incas",
+    desc: "Recorrido clásico por la joya del imperio: las ruinas y mercado artesanal de Pisac, la fortaleza inca de Ollantaytambo y el pueblo tradicional de Chinchero.",
+    dur: "Día completo (08:00 - 18:30)",
+    min: 1,
+    max: 6,
+    mod: "Privado",
+    precio: 220,
+    rating: 5.0,
+    reviews: 188,
+    c: ["#2C7A4B", "#071F24"],
+    imagenes: ["images/pisac.webp", "images/pisac2.webp", "images/Ollantaytmbo2.jpg", "images/pisac3.webp"],
+    ida: [
+      S("Cusco (Recojo en hotel)", "Salida hacia el noreste rumbo al Valle Sagrado", "08:00 AM", "—"),
+      S("Complejo Arqueológico de Pisac", "Andenes colosales y cementerio incaico", "09:15 AM", "1.5 horas"),
+      S("Urubamba", "Parada gastronómica recomendada para almuerzo buffet", "12:30 PM", "1 hora"),
+      S("Fortaleza de Ollantaytambo", "Templo del Sol y monolitos ciclópeos", "02:00 PM", "1.5 horas")
+    ],
+    ret: [
+      S("Chinchero & Talleres Textiles", "Demostración de teñido natural de lana de alpaca", "04:30 PM", "1 hora"),
+      S("Retorno a tu hotel en Cusco", "Llegada cómoda antes del anochecer", "06:30 PM", "—")
+    ]
+  },
+  {
+    id: 3,
+    slug: "montana-7-colores",
+    categoria: "montana",
+    nombre: "Montaña de 7 Colores (Vinicunca)",
+    desc: "Aventura hacia el espectáculo geológico más famoso del mundo andino. Viaja en vehículo privado para salir temprano y llegar antes de las multitudes.",
+    dur: "Día completo (04:00 - 16:30)",
+    min: 1,
+    max: 8,
+    mod: "Grupo Pequeño / Privado",
+    precio: 260,
+    rating: 4.9,
+    reviews: 210,
+    c: ["#E11D48", "#071F24"],
+    imagenes: ["images/M7colores.webp", "images/M7colores2.webp"],
+    ida: [
+      S("Salida de madrugada en Cusco", "Recojo en hotel para evitar las filas de buses grandes", "04:00 AM", "—"),
+      S("Cusipata", "Parada para desayuno energético andino", "06:15 AM", "45 min"),
+      S("Punto de inicio (Quesoyuno)", "Preparación y comienzo de la caminata hacia Vinicunca", "08:00 AM", "2 horas de ascenso")
+    ],
+    ret: [
+      S("Mirador de Vinicunca (5,036 msnm)", "Tiempo para contemplar los 7 colores y fotos únicas", "10:30 AM", "45 min"),
+      S("Descenso y almuerzo buffet", "Retorno al estacionamiento y comida reconfortante", "12:30 PM", "1.5 horas"),
+      S("Retorno a Cusco", "Llegada al centro de la ciudad para descansar", "04:30 PM", "—")
+    ]
+  },
+  {
+    id: 4,
+    slug: "laguna-humantay",
+    categoria: "montana",
+    nombre: "Laguna Humantay Turquesa",
+    desc: "Caminata de ensueño hacia la laguna color esmeralda a los pies del imponente nevado Salkantay. Una de las postales más fotografiadas de los Andes.",
+    dur: "Día completo (04:30 - 17:30)",
+    min: 1,
+    max: 6,
+    mod: "Privado",
+    precio: 250,
+    rating: 4.9,
+    reviews: 165,
+    c: ["#0E7490", "#071F24"],
+    imagenes: ["images/huamantay.webp", "images/humantay2.webp"],
+    ida: [
+      S("Recojo en tu hotel en Cusco", "Partida temprana rumbo a la provincia de Anta", "04:30 AM", "—"),
+      S("Mollepata", "Desayuno tradicional en pueblo andino", "07:00 AM", "45 min"),
+      S("Soraypampa (3,900 msnm)", "Campamento base y comienzo del trekking a la laguna", "09:00 AM", "1.5 horas caminata")
+    ],
+    ret: [
+      S("Laguna Humantay (4,200 msnm)", "Paz, aguas turquesas y vistas al glaciar", "10:45 AM", "1 hora"),
+      S("Descenso a Soraypampa y Almuerzo", "Retorno al vehículo y almuerzo reconfortante", "12:30 PM", "1.5 horas"),
+      S("Llegada a tu hotel en Cusco", "Retorno suave y descanso merecido", "05:30 PM", "—")
+    ]
+  },
+  {
+    id: 5,
+    slug: "maras-moray",
+    categoria: "valle",
+    nombre: "Maras, Moray y Salineras",
+    desc: "Descubre los hipnóticos andenes circulares de experimentación agrícola inca en Moray y los miles de pozos de sal blanca artesanal en las Salineras de Maras.",
+    dur: "Medio día (08:30 - 14:30)",
+    min: 1,
+    max: 6,
+    mod: "Privado",
+    precio: 180,
+    rating: 4.8,
+    reviews: 130,
+    c: ["#B7791F", "#071F24"],
+    imagenes: ["images/Moray.webp", "images/moray1.jpg", "images/maras-moray.jpg", "images/maras-y-moray.jpg"],
+    ida: [
+      S("Salida desde Cusco", "Recojo en tu hotel en horario cómodo y sin madrugar", "08:30 AM", "—"),
+      S("Laboratorio Agrícola de Moray", "Andenes circulares concéntricos incas con microclimas", "09:45 AM", "1 hora"),
+      S("Salineras de Maras", "Miles de pozas de sal rosada explotadas desde época preinca", "11:15 AM", "1 hora")
+    ],
+    ret: [
+      S("Pueblo de Chinchero", "Parada opcional para compras de artesanía de alta calidad", "12:45 PM", "45 min"),
+      S("Retorno a Cusco", "Llegada al centro de Cusco a tiempo para el almuerzo", "02:30 PM", "—")
+    ]
+  },
+  {
+    id: 6,
+    slug: "city-tour-cusco",
+    categoria: "clasico",
+    nombre: "City Tour Cusco & Complejo Sacsayhuamán",
+    desc: "La introducción perfecta a la capital del Tahuantinsuyo: Plaza de Armas, Templo del Sol (Qorikancha) y las impresionantes murallas megalíticas de Sacsayhuamán, Q'enqo y Puka Pukara.",
+    dur: "Medio día (08:30 - 13:30 o 13:30 - 18:30)",
+    min: 1,
+    max: 6,
+    mod: "Privado",
+    precio: 150,
+    rating: 5.0,
+    reviews: 175,
+    c: ["#7A3B2E", "#071F24"],
+    imagenes: ["images/sacsayhuaman.webp", "images/sacsayhuaman2.webp", "images/sacsayhuaman3.webp", "images/sacsayhuaman4.webp"],
+    ida: [
+      S("Recojo en tu hotel", "Inicio del recorrido en el casco histórico", "08:30 AM", "—"),
+      S("Templo del Qorikancha", "Base incaica sobre la que se construyó el convento de Santo Domingo", "08:45 AM", "45 min"),
+      S("Sacsayhuamán", "Bloques de piedra ciclópeos de hasta 120 toneladas", "10:00 AM", "1.5 horas")
+    ],
+    ret: [
+      S("Q'enqo, Puka Pukara y Tambomachay", "Centros ceremoniales y fuentes sagradas incas", "11:45 AM", "1 hora"),
+      S("Retorno a la Plaza de Armas o tu hotel", "Fin del tour en el corazón de Cusco", "01:30 PM", "—")
+    ]
+  }
+];
+
+const VEH = [
+  {
+    tipo: "Auto / SUV Confort",
+    cap: "1 a 3 personas",
+    f: ["Aire acondicionado y calefacción", "Asientos ergonómicos reclinables", "Espacio para 3 maletas grandes", "Cargadores USB para smartphones", "SOAT y póliza turística vigente"],
+    desc: "Perfecto para parejas, amigos o viajeros solitarios que buscan privacidad, agilidad y confort total en rutas de montaña."
+  },
+  {
+    tipo: "Minivan Turística Hyundai H1 / Toyota Hiace",
+    cap: "4 a 8 personas",
+    f: ["Climatizador bi-zona", "Asientos individuales amplios", "Gran maletero para equipaje voluminoso", "Ventanas panorámicas con filtro solar", "Suspensión suave para curvas andinas"],
+    desc: "La favorita de familias y pequeños grupos. Viaja con total soltura, espacio de sobra para compras y máxima comodidad."
+  },
+  {
+    tipo: "Van Ejecutiva Mercedes Benz Sprinter",
+    cap: "Hasta 12-15 personas",
+    f: ["Aire acondicionado de alto rendimiento", "Asientos ejecutivos de alto confort", "Maletero extra profundo", "Micrófono para guía si lo requieres", "Máxima seguridad y estabilidad"],
+    desc: "Diseñada para grupos de amigos o familias ampliadas que desean recorrer Cusco juntos sin perder un ápice de exclusividad."
+  }
+];
+
+const DRV = [
+  {
+    n: "Juan Carlos Mendoza",
+    x: "14 años de experiencia",
+    i: "Español, Quechua e Inglés básico",
+    r: "Especialista en Valle Sagrado y Machu Picchu",
+    d: "Cusqueño apasionado por la historia de su tierra. Conduce con calma y conoce cada rincón seguro del camino para que disfrutes cada paisaje."
+  },
+  {
+    n: "Marco Antonio Quispe",
+    x: "11 años de experiencia",
+    i: "Español e Inglés intermedio",
+    r: "Especialista en Rutas de Altura (Humantay y Vinicunca)",
+    d: "Manejo defensivo y prudente en carreteras de altura. Siempre puntual, atento con el equipaje y dispuesto a brindar las mejores recomendaciones locales."
+  },
+  {
+    n: "Edwin Huamán",
+    x: "9 años de experiencia",
+    i: "Español y Quechua",
+    r: "Especialista en Maras, Moray y City Tour",
+    d: "Amable, cordial y flexible. Le encanta compartir anécdotas de las comunidades andinas y cuidar de la tranquilidad de cada familia pasajera."
+  }
+];
+
+const TST = [
+  {
+    n: "Camila & Mateo",
+    o: "Buenos Aires, Argentina",
+    r: 5,
+    c: "Excelente servicio para ir a Ollantaytambo. El chofer llegó 10 minutos antes al hotel, la van estaba impecable y paramos a sacar fotos increíbles en el Valle Sagrado.",
+    f: "Hace 2 semanas"
+  },
+  {
+    n: "David R.",
+    o: "Madrid, España",
+    r: 5,
+    c: "Hacer la Montaña de 7 Colores en privado fue la mejor decisión de nuestro viaje. Salimos temprano y llegamos a la cima cuando casi no había gente. El chofer condujo con mucha precaución.",
+    f: "Hace 1 mes"
+  },
+  {
+    n: "Valeria & Familia",
+    o: "Lima, Perú",
+    r: 5,
+    c: "Viajamos con niños pequeños y un adulto mayor. Nos tuvieron muchísima paciencia en cada parada y nos ayudaron en todo momento. La atención por WhatsApp fue inmediata.",
+    f: "Hace 3 semanas"
+  }
+];
+
+/* ===== RENDERIZADO Y ALINEACIÓN DE BOTONES ===== */
+const $ = s => document.querySelector(s);
+const starPath = "M12 2.5 14.9 8.4l6.6 1-4.8 4.7 1.1 6.6-5.8-3.1-5.8 3.1 1.1-6.6-4.8-4.7 6.6-1Z";
+const stars = n => Array.from({ length: 5 }, (_, i) => `<svg viewBox="0 0 24 24" width="16" height="16" fill="${i < n ? "currentColor" : "none"}" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="${starPath}"/></svg>`).join("");
+
+const waUrl = m => "https://wa.me/" + (CONFIG.whatsapp || "51984123456") + "?text=" + encodeURIComponent(m);
+
+function renderTours(category = "all") {
+  const filtered = category === "all" ? TOURS : TOURS.filter(t => t.categoria === category);
+  
+  $("#tourGrid").innerHTML = filtered.map(t => `
+    <article class="card">
+      <div class="ph" style="--c1:${t.c[0]};--c2:${t.c[1]}">
+        <img src="${t.imagenes[0]}" alt="${t.nombre}" loading="lazy">
+        <span class="ph-badge">🛡️ ${t.mod}</span>
+        <span class="ph-rating">
+          <svg viewBox="0 0 24 24" width="13" height="13"><path d="${starPath}"/></svg>
+          ${t.rating}
+        </span>
+        <span class="ph-title">${t.nombre}</span>
+      </div>
+      <div class="pad">
+        <h3>${t.nombre}</h3>
+        <p class="tour-desc">${t.desc}</p>
+        <div class="tags">
+          <span class="tag">⏱️ ${t.dur}</span>
+          <span class="tag">👥 Hasta ${t.max} pers.</span>
+          <span class="tag">📍 Recojo hotel</span>
+        </div>
+        
+        <!-- ESTE CONTENEDOR TIENE margin-top: auto PARA ALINEARSE AL MISMO NIVEL EXACTO -->
+        <div class="card-footer">
+          <div class="price-row">
+            <div>
+              <div class="price-label">Servicio Privado</div>
+              <div class="price-val">Desde S/ ${t.precio} <small>/ grupo</small></div>
+            </div>
+            <div style="font-size:0.8rem;color:var(--muted)">⭐ ${t.reviews} reseñas</div>
+          </div>
+          <button class="btn btn-tour" data-id="${t.id}">
+            <span>Ver detalles del tour</span>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+        </div>
+      </div>
+    </article>
+  `).join("");
+}
+
+// Filtros de categoría de tours
+$("#filterTabs").addEventListener("click", e => {
+  const btn = e.target.closest(".filter-btn");
+  if (!btn) return;
+  document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  renderTours(btn.dataset.filter);
+});
+
+// Render inicial de tours
+renderTours();
+
+// Render de Vehículos
+$("#vehGrid").innerHTML = VEH.map(v => `
+  <div class="veh-card">
+    <div class="veh-head">
+      <div>
+        <h3 style="color:#fff;margin:0 0 4px">${v.tipo}</h3>
+        <span style="font-size:0.88rem;color:#E2ECEE">Capacidad: <b>${v.cap}</b></span>
+      </div>
+      <span class="veh-badge">100% Climatizado</span>
+    </div>
+    <div class="pad">
+      <p style="color:var(--muted);font-size:0.92rem;margin-bottom:18px">${v.desc}</p>
+      <ul class="chk" style="margin-top:auto">
+        ${v.f.map(x => `<li>${x}</li>`).join("")}
+      </ul>
+    </div>
+  </div>
+`).join("");
+
+// Render de Conductores
+$("#drvGrid").innerHTML = DRV.map(d => `
+  <div class="drv-card">
+    <div class="pad">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px">
+        <div style="width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--deep));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.2rem">
+          ${d.n.charAt(0)}
+        </div>
+        <div>
+          <h3 style="margin:0 0 3px;font-size:1.2rem">${d.n}</h3>
+          <span style="font-size:0.84rem;color:var(--teal);font-weight:700">🛡️ ${d.x}</span>
+        </div>
+      </div>
+      <div style="font-size:0.86rem;color:var(--muted);margin-bottom:12px">
+        <div><b>Idiomas:</b> ${d.i}</div>
+        <div><b>Ruta habitual:</b> ${d.r}</div>
+      </div>
+      <p style="color:var(--muted);font-size:0.92rem;line-height:1.55;margin-top:auto">${d.d}</p>
+    </div>
+  </div>
+`).join("");
+
+// Render de Testimonios
+function renderT() {
+  $("#tstGrid").innerHTML = TST.map(t => `
+    <div class="tst-card">
+      <div class="stars" aria-label="${t.r} de 5">${stars(t.r)}</div>
+      <p style="font-style:italic;font-size:0.96rem;color:var(--ink);margin-bottom:18px">“${t.c}”</p>
+      <div class="tst-author">
+        <div class="tst-avatar">${t.n.charAt(0)}</div>
+        <div class="tst-meta">
+          <b>${t.n}</b>
+          <span>${t.o} · <small style="color:var(--muted)">${t.f}</small></span>
+        </div>
+      </div>
+    </div>
+  `).join("");
+}
+renderT();
+
+// Opciones del formulario de reserva
+$("#fTour").innerHTML = TOURS.map(t => `<option value="${t.id}">${t.nombre} (Desde S/ ${t.precio})</option>`).join("");
+
+/* ===== MAPA ESQUEMÁTICO DEL RECORRIDO ===== */
+function mapSvg(t) {
+  const all = t.ida.map(s => s.n);
+  const n = all.length;
+  const xy = i => [60 + i * (580 / Math.max(n - 1, 1)), 110 + Math.sin(i * 1.5) * 45];
+  const go = all.map((_, i) => xy(i).join(",")).join(" ");
+  const back = all.map((_, i) => { const [x, y] = xy(i); return x + "," + (y + 28); }).join(" ");
+  return `<svg class="map" viewBox="0 0 700 220" role="img" aria-label="Esquema de ruta">
+    <polyline points="${go}" fill="none" stroke="var(--teal)" stroke-width="4" stroke-linecap="round"/>
+    <polyline points="${back}" fill="none" stroke="var(--accent)" stroke-width="3" stroke-dasharray="6 5"/>
+    ${all.map((a, i) => {
+      const [x, y] = xy(i);
+      return `<circle cx="${x}" cy="${y}" r="8" fill="var(--teal)" stroke="#fff" stroke-width="2"/>
+              <text x="${x}" y="${y - 16}" text-anchor="middle" font-size="12" font-weight="600" fill="var(--ink)">${a}</text>`;
+    }).join("")}
+    <text x="14" y="206" font-size="11" fill="var(--muted)">Línea verde continua: Ida · Línea roja punteada: Retorno</text>
+  </svg>`;
+}
+
+const tl = (a, c) => `<ul class="tl ${c}">${a.map(s => `<li><b>${s.n}</b><br><small>${s.d} · Hora: ${s.h} · Tiempo aprox: ${s.t}</small></li>`).join("")}</ul>`;
+
+/* ===== MODAL DE DETALLE DEL TOUR ===== */
+$("#tourGrid").addEventListener("click", e => {
+  const b = e.target.closest("button[data-id]");
+  if (!b) return;
+  const t = TOURS.find(x => x.id == b.dataset.id);
+
+  $("#dbody").innerHTML = `
+    <div class="ph" style="--c1:${t.c[0]};--c2:${t.c[1]};height:240px;border-radius:var(--radius)">
+      <img src="${t.imagenes[0]}" alt="${t.nombre}">
+      <span class="ph-badge">🛡️ ${t.mod}</span>
+      <span class="ph-rating"><svg viewBox="0 0 24 24" width="13" height="13"><path d="${starPath}"/></svg> ${t.rating} (${t.reviews} opiniones)</span>
+      <span class="ph-title" style="font-size:1.35rem">${t.nombre}</span>
+    </div>
+    
+    <div class="gallery">
+      ${t.imagenes.map((src, i) => `<img src="${src}" alt="${t.nombre}, foto ${i + 1}" loading="lazy">`).join("")}
+    </div>
+
+    <h2 style="margin-top:20px">${t.nombre}</h2>
+    <p style="font-size:1.05rem;color:var(--muted)">${t.desc}</p>
+    
+    <div class="tags">
+      <span class="tag">⏱️ Duración: ${t.dur}</span>
+      <span class="tag">👥 Modalidad: ${t.mod}</span>
+      <span class="tag">🚐 Capacidad: ${t.min} a ${t.max} pasajeros</span>
+      <span class="tag">📍 Recojo y retorno en hotel</span>
+    </div>
+
+    <h3 style="margin-top:28px">Ruta y Paradas de Ida</h3>
+    ${tl(t.ida, "")}
+
+    <h3>Ruta de Retorno</h3>
+    ${tl(t.ret, "back")}
+
+    <h3>Mapa Esquemático de la Ruta</h3>
+    ${mapSvg(t)}
+
+    <div class="grid g2" style="margin:28px 0">
+      <div style="background:var(--surface-alt);padding:20px;border-radius:var(--radius-sm)">
+        <h3 style="color:var(--teal)">✓ Qué Incluye</h3>
+        <ul class="chk">${incl.map(x => `<li>${x}</li>`).join("")}</ul>
+      </div>
+      <div style="background:var(--surface-alt);padding:20px;border-radius:var(--radius-sm)">
+        <h3 style="color:var(--accent)">✕ No Incluye</h3>
+        <ul class="chk no">${noIncl.map(x => `<li>${x}</li>`).join("")}</ul>
+      </div>
+    </div>
+
+    <h3>Tarifas de Servicio Privado (por vehículo / grupo)</h3>
+    <table>
+      <tr><th>Tamaño del grupo</th><th>Tarifa de referencia</th></tr>
+      <tr><td>1 a 2 personas (Auto / SUV Confort)</td><td><b>Desde S/ ${t.precio}</b></td></tr>
+      <tr><td>3 a 4 personas (Minivan Confort)</td><td><b>Desde S/ ${Math.round(t.precio * 1.25)}</b></td></tr>
+      <tr><td>5 a 8 personas (Van Grupal)</td><td><b>Desde S/ ${Math.round(t.precio * 1.45)}</b></td></tr>
+    </table>
+
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
+      <button class="btn teal" id="goRes" data-id="${t.id}" style="padding:13px 28px">Reservar este tour ahora</button>
+      <a class="btn wa" target="_blank" rel="noopener" href="${waUrl(`Hola, estoy interesado en el tour "${t.nombre}". Quisiera consultar disponibilidad y cotizar.`)}">
+        Consultar disponibilidad por WhatsApp
+      </a>
+    </div>
+  `;
+  $("#dlg").showModal();
+});
+
+$("#dbody").addEventListener("click", e => {
+  const b = e.target.closest("#goRes");
+  if (b) {
+    $("#fTour").value = b.dataset.id;
+    $("#dlg").close();
+    upd();
+    location.hash = "reservar";
+  }
+});
+
+$("#dclose").onclick = () => $("#dlg").close();
+
+/* ===== FORMULARIO DE RESERVA DINÁMICO ===== */
+const F = $("#resForm");
+const paxInput = F.elements.pax;
+const dateInput = F.elements.fecha;
+const today = new Date();
+const todayLocal = [today.getFullYear(), String(today.getMonth() + 1).padStart(2, "0"), String(today.getDate()).padStart(2, "0")].join("-");
+dateInput.min = todayLocal;
+
+function validatePhone(input) {
+  const digits = input.value.replace(/\D/g, "");
+  input.setCustomValidity(input.value && (digits.length < 7 || digits.length > 15) ? "Ingresa un teléfono con entre 7 y 15 dígitos." : "");
+}
+
+function upd() {
+  const d = new FormData(F);
+  const t = TOURS.find(x => x.id == d.get("tour"));
+  if (!t) return;
+  paxInput.min = t.min;
+  paxInput.max = t.max;
+  paxInput.setCustomValidity(paxInput.value && (Number(paxInput.value) < t.min || Number(paxInput.value) > t.max) ? `Este tour admite entre ${t.min} y ${t.max} personas.` : "");
+
+  const summary = $("#summary");
+  summary.replaceChildren();
+
+  const line = (label, value) => {
+    const strong = document.createElement("strong");
+    strong.textContent = `${label}: `;
+    summary.append(strong, document.createTextNode(value || "—"), document.createElement("br"));
+  };
+
+  line("Tour seleccionado", t.nombre);
+  line("Fecha solicitada", d.get("fecha"));
+  line("Pasajeros", `${d.get("pax")} persona(s)`);
+  line("Tarifa base privada", `Desde S/ ${t.precio} (por vehículo)`);
+  line("Lugar de recojo", d.get("recojo"));
+}
+
+F.querySelectorAll('input[type="tel"]').forEach(input => input.addEventListener("input", () => validatePhone(input)));
+F.addEventListener("input", upd);
+F.addEventListener("change", upd);
+upd();
+
+F.addEventListener("submit", e => {
+  e.preventDefault();
+  validatePhone(F.elements.tel);
+  upd();
+  if (!F.reportValidity()) return;
+
+  const d = Object.fromEntries(new FormData(F));
+  const t = TOURS.find(x => x.id == d.tour);
+  const resMsg = $("#resMsg");
+
+  const m = `¡Hola LLevameRapido! Quisiera solicitar la reserva del tour privado *${t.nombre}*:\n` +
+            `• Fecha: ${d.fecha}\n` +
+            `• Pasajeros: ${d.pax} personas\n` +
+            `• Hora deseada: ${d.hora}\n` +
+            `• Lugar de recojo: ${d.recojo}\n` +
+            `• Lugar de retorno: ${d.retorno || d.recojo}\n` +
+            `• Nombre: ${d.nombre}\n` +
+            `• Teléfono: ${d.tel}\n` +
+            (d.com ? `• Comentarios: ${d.com}\n` : "") +
+            `¿Tienen disponibilidad para esta fecha? ¡Gracias!`;
+
+  window.open(waUrl(m), "_blank", "noopener");
+  resMsg.textContent = "✓ Solicitud preparada en WhatsApp. Ábrela y envíala para confirmar disponibilidad de inmediato.";
+});
+
+document.querySelectorAll("[data-wa]").forEach(a => {
+  a.href = waUrl("¡Hola LLevameRapido! Quisiera solicitar información sobre sus servicios de transporte turístico privado en Cusco.");
+  a.target = "_blank";
+  a.rel = "noopener";
+});
+
+/* ===== OPINIONES Y MENSAJES ===== */
+$("#tstForm").addEventListener("submit", e => {
+  e.preventDefault();
+  if (!e.target.reportValidity()) return;
+  const form = e.target;
+  const newTst = {
+    n: form.elements.n.value,
+    o: "Viajero verificado",
+    r: Number(form.elements.r.value),
+    c: form.elements.c.value,
+    f: "Hoy"
+  };
+  TST.unshift(newTst);
+  renderT();
+  form.reset();
+  $("#tstMsg").textContent = "¡Muchas gracias! Tu opinión ha sido registrada.";
+});
+
+$("#ctForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const form = e.target;
+  const tel = form.elements.telefono;
+  if (tel.value) validatePhone(tel);
+  if (!form.reportValidity()) return;
+
+  const d = Object.fromEntries(new FormData(form));
+  const m = `¡Hola LLevameRapido! Mi nombre es ${d.nombre}. Consulta: ${d.mensaje}. Mi correo es ${d.correo} y teléfono ${d.telefono || "no indicado"}.`;
+  window.open(waUrl(m), "_blank", "noopener");
+  $("#ctMsg").textContent = "✓ Mensaje preparado en WhatsApp para respuesta inmediata.";
+});
+
+/* Menú hamburguesa móvil */
+$("#burger").onclick = () => {
+  const open = $("#menu").classList.toggle("open");
+  $("#burger").setAttribute("aria-expanded", String(open));
+  $("#burger").setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+};
+
+$("#menu").addEventListener("click", e => {
+  if (e.target.closest("a")) {
+    $("#menu").classList.remove("open");
+    $("#burger").setAttribute("aria-expanded", "false");
+    $("#burger").setAttribute("aria-label", "Abrir menú");
+  }
+});
+</script>
+</body>
+</html>
