@@ -3,7 +3,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const root = __dirname;
-const page = "LLevameRapido – Transporte turístico en Cusco.html";
+const page = "index.html";
 const port = 8080;
 const mime = {
   ".css": "text/css; charset=utf-8",
